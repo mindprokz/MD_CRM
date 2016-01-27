@@ -1,4 +1,6 @@
 @import mail
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700&subset=latin,cyrillic-ext)
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed&subset=latin,cyrillic-ext)
 
 @mixin clear()
 	&:after
@@ -32,4 +34,138 @@ h1,h2,h3,h4,h5,h6
 a 
 	text-decoration : none
 
-			
+.bold
+	font-weight: 700
+
+.light
+	font-weight: 700
+
+.content
+	width: 1270px
+	padding-left: 105px
+	padding-right: 105px
+	margin: auto
+	overflow: hidden
+
+header
+	padding-top: 8px
+	padding-bottom: 7px
+	.content
+		padding-left: 30px
+		padding-right: 30px
+	img
+		float: left
+	h2
+		// Text style for "Mindpro-CRM"
+		float: left
+		color: #872d85
+		font-family: Roboto, sans-serif
+		font-size: 20px
+		font-weight: 700
+		padding-left: 20px
+		padding-top: 23px
+	.line
+		// Style for "Separator"
+		float: left
+		width: 1px
+		height: 62px
+		background-color: #b1b1b1
+		margin-top: 4px
+		margin-left: 25px
+	h3
+		// Text style for "Система для уп"
+		float: left
+		margin-left: 30px
+		margin-top: 18px
+		color: #484848
+		font-family: Roboto, sans-serif
+		font-size: 25px
+		font-weight: 700
+	.tel
+		float: left
+		margin-left: 75px
+		h4
+			// Base text style
+			width: 190px
+			height: 17px
+			font-family: Roboto, sans-serif
+			font-size: 24px
+			line-height: 22px
+			margin-top: 15px
+
+			// Text style for "+7 705"
+			color: #686868
+			font-weight: 400
+			span
+				// Text style for "108 99 88"
+				color: #3a3a3a
+				font-weight: 700
+		a
+			// Text style for "Заказать обрат"
+			color: #5bacbd
+			font-family: Roboto, sans-serif
+			font-size: 13px
+			font-weight: 400
+			text-transform: uppercase
+			text-decoration: none
+			display: block
+			margin-top: 10px
+			border-bottom: 1px dashed #8bc1cd
+.section1
+	background: url(../img/bg_top.jpg)
+	padding-top: 45px
+	padding-bottom: 25px
+	h1
+		// Base text style
+		font-family: Roboto, sans-serif
+		font-size: 50px
+		line-height: 40px
+		text-align: center
+
+		// Text style for "Какие выгоды в"
+		color: #2f2f2f
+		font-weight: 300
+		span:not(.bold)
+			// Text style for "Mindpro-CRM"
+			color: #872d85
+			font-weight: 700
+	img[alt="mindpro-crm"]
+		float: left
+		margin-top: 40px
+		margin-left: -100px
+	.list
+		margin-top: 40px
+		margin-left: 65px
+		float: left
+		img
+			vertical-align: bottom
+		.list_elem
+			margin-top: 10px
+			margin-bottom: 20px
+			.list_text
+				display: inline
+				padding-left: 22px
+				// Base text style
+				font-family: 'Roboto Condensed', sans-serif
+				font-size: 25px
+				line-height: 30px
+
+				// Text style for "Повышение конт"
+				color: #444
+				font-weight: 400
+				span
+					// Text style for "100%
+					color: #26ad60
+					font-weight: 700
+
+.section2
+	h2
+		background-color: #26ad60
+		// Text style for "Продажи"
+		color: white
+		font-family: Roboto, sans-serif
+		font-size: 45px
+		font-weight: 700
+		text-align: center
+		padding-top: 12px
+		padding-bottom: 12px
