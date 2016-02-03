@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700&subset=latin,cyrillic-ext);
-@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed&subset=latin,cyrillic-ext);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700&subset=latin,cyrillic);
 #mail {
   position: fixed;
   top: 0;
@@ -37,7 +37,8 @@
 
 body {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  font-family: Roboto, sans-serif; }
 
 h1, h2, h3, h4, h5, h6 {
   -webkit-margin-before: 0;
@@ -50,10 +51,10 @@ a {
   text-decoration: none; }
 
 .bold {
-  font-weight: 700; }
+  font-weight: 700 !important; }
 
 .light {
-  font-weight: 700; }
+  font-weight: 300 !important; }
 
 .content {
   width: 1270px;
@@ -153,19 +154,363 @@ header {
         font-size: 25px;
         line-height: 30px;
         color: #444;
-        font-weight: 400; }
+        font-weight: 300; }
         .section1 .list .list_elem .list_text span {
           color: #26ad60;
           font-weight: 700; }
 
-.section2 h2 {
-  background-color: #26ad60;
-  color: white;
-  font-family: Roboto, sans-serif;
-  font-size: 45px;
-  font-weight: 700;
-  text-align: center;
-  padding-top: 12px;
-  padding-bottom: 12px; }
+.section2 {
+  background-color: #f4f4f4;
+  padding-bottom: 33px; }
+  .section2 h2 {
+    background-color: #26ad60;
+    color: white;
+    font-family: Roboto, sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px; }
+  .section2 h3 {
+    font-family: Roboto;
+    font-size: 31px;
+    line-height: 45px;
+    padding-top: 45px;
+    text-align: center;
+    color: #333;
+    font-weight: 400; }
+    .section2 h3 span {
+      color: #872d85;
+      font-weight: 700; }
+  .section2 img[alt="arrow"] {
+    float: left;
+    margin-top: 31px;
+    margin-left: 174px; }
+  .section2 .list {
+    color: #333;
+    font-family: Roboto;
+    float: left;
+    margin-left: 60px;
+    margin-top: 33px; }
+    .section2 .list header {
+      font-size: 35px;
+      font-weight: 700;
+      padding-top: 0;
+      padding-bottom: 0; }
+    .section2 .list img {
+      float: left;
+      margin-top: 8px; }
+    .section2 .list .list_text {
+      float: left;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 35px;
+      margin-left: 15px;
+      border-bottom: 1px solid #d2d2d2;
+      width: 597px; }
+      .section2 .list .list_text.last {
+        border-bottom: 0; }
+  .section2 h4 {
+    color: #333;
+    font-family: Roboto;
+    padding-top: 325px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700; }
+  .section2 .left_text {
+    width: 291px;
+    height: 65px; }
+  .section2 .right_text {
+    width: 405px;
+    height: 47px; }
+  .section2 h5 {
+    font-family: Roboto;
+    font-size: 18px;
+    line-height: 30px;
+    float: left;
+    color: #666;
+    font-weight: 300;
+    margin-top: 48px;
+    margin-left: 125px; }
+    .section2 h5 span {
+      color: #26ad60;
+      font-weight: 300; }
+      .section2 h5 span.red {
+        color: #ab4040; }
+      .section2 h5 span.bold {
+        color: #666;
+        font-weight: 700; }
+    .section2 h5 img {
+      float: left;
+      margin-right: 18px;
+      margin-top: 4px; }
+
+.section3 {
+  padding-top: 25px;
+  padding-bottom: 30px; }
+  .section3 .left_info, .section3 .right_info {
+    float: left;
+    width: 480px; }
+  .section3 .left_info h3 {
+    color: #333;
+    font-family: Roboto;
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 17px; }
+  .section3 .left_info h4 {
+    color: #666;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 25px; }
+  .section3 .right_info {
+    color: #333;
+    font-family: Roboto;
+    float: left;
+    margin-left: 60px;
+    margin-top: 33px; }
+    .section3 .right_info header {
+      font-size: 20px;
+      font-weight: 700;
+      padding-top: 15px;
+      padding-bottom: 18px; }
+      .section3 .right_info header.first {
+        margin-top: 18px; }
+    .section3 .right_info img {
+      float: left;
+      margin-top: 8px; }
+    .section3 .right_info .list_text {
+      float: left;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 20px;
+      margin-left: 15px;
+      border-bottom: 1px solid #d2d2d2;
+      width: 445px;
+      padding-bottom: 8px;
+      margin-top: 6px; }
+      .section3 .right_info .list_text.last {
+        border-bottom: 0; }
+
+.section4 {
+  background-color: #f4f4f4; }
+  .section4 hgroup {
+    background-color: #26ad60;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    color: white;
+    font-family: Roboto;
+    text-align: center;
+    line-height: 45px; }
+    .section4 hgroup h2 {
+      font-size: 45px;
+      font-weight: 700; }
+    .section4 hgroup h3 {
+      font-size: 35px;
+      font-weight: 300; }
+  .section4 .content {
+    padding-top: 25px;
+    padding-bottom: 40px;
+    position: relative; }
+    .section4 .content header {
+      border: 1px solid #cdcdcd;
+      padding-left: 53px;
+      padding-top: 0;
+      padding-bottom: 0;
+      border-radius: 10px; }
+      .section4 .content header div {
+        float: left;
+        font-family: Roboto;
+        line-height: 27px;
+        text-transform: uppercase;
+        color: black;
+        font-size: 29px;
+        font-weight: 300;
+        padding-top: 10px;
+        padding-bottom: 10px; }
+        .section4 .content header div.first {
+          border-right: 1px solid #cdcdcd;
+          padding-right: 53px; }
+        .section4 .content header div.name {
+          color: #872d85;
+          font-weight: 700;
+          padding-left: 100px;
+          padding-top: 22px; }
+          .section4 .content header div.name span {
+            color: black;
+            font-weight: 300; }
+        .section4 .content header div span {
+          color: #26ad60;
+          font-size: 25px;
+          font-weight: 700; }
+    .section4 .content img[alt="arrow_right"] {
+      float: left;
+      margin-right: 80px;
+      margin-left: 80px;
+      margin-top: 80px; }
+    .section4 .content .ul {
+      margin-top: 35px;
+      float: left;
+      width: 404px; }
+      .section4 .content .ul .header {
+        font-family: Roboto, sans-serif;
+        color: black;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 30px; }
+      .section4 .content .ul div:not(.header) {
+        color: #666;
+        font-size: 17px;
+        font-weight: 300;
+        line-height: 17px;
+        padding-bottom: 17px; }
+  .section4 .bottom_info {
+    background: #fff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+    font-family: Roboto;
+    font-size: 35px;
+    text-align: center;
+    color: black;
+    font-weight: 300; }
+    .section4 .bottom_info span {
+      color: #872d85;
+      font-weight: 700; }
+    .section4 .bottom_info img[alt="arrow_absolute"] {
+      position: absolute;
+      top: -50px;
+      right: 370px; }
+
+.section5 {
+  background: url(../img/bg_stat.jpg) no-repeat;
+  background-size: cover;
+  padding-bottom: 55px; }
+  .section5 hgroup {
+    background-color: #26ad60;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: white;
+    font-family: Roboto, sans-serif; }
+    .section5 hgroup h2 {
+      font-size: 45px;
+      font-weight: 700;
+      line-height: 40px; }
+    .section5 hgroup h3 {
+      font-size: 35px;
+      font-weight: 300; }
+  .section5 .icons {
+    padding-top: 60px; }
+    .section5 .icons .icon_elem {
+      float: left;
+      width: 310px;
+      margin-left: 43px; }
+      .section5 .icons .icon_elem p {
+        margin-top: 25px;
+        color: white;
+        font-family: Roboto, sans-serif;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 27px; }
+
+.section6 {
+  background-color: #f4f4f4;
+  padding-top: 40px;
+  padding-bottom: 55px; }
+  .section6 .content h3 {
+    color: #26ad60;
+    font-family: Roboto;
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 27px;
+    text-align: center; }
+  .section6 .content .icon_list {
+    margin-top: 43px; }
+    .section6 .content .icon_list .icon_elem {
+      width: 260px;
+      margin-left: 90px;
+      float: left;
+      height: 205px; }
+      .section6 .content .icon_list .icon_elem p {
+        margin-top: 20px; }
+
+footer {
+  background: #ebebeb;
+  padding-top: 38px;
+  padding-bottom: 40px; }
+  footer .content {
+    padding-left: 30px;
+    padding-right: 30px; }
+  footer span {
+    color: #2d2d2d;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 400; }
+  footer img {
+    float: right; }
+
+#form {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background: rgba(38, 173, 96, 0.8);
+  transition: all 0.3s linear; }
+  #form.not_active_form {
+    display: none;
+    opacity: 0; }
+  #form.active_form {
+    display: block;
+    opacity: 1; }
+  #form .wrapper_form {
+    width: 320px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px; }
+    #form .wrapper_form .closer {
+      width: 25px;
+      height: 25px;
+      float: right;
+      fill: rgba(38, 173, 96, 0.7);
+      cursor: pointer;
+      transition: fill 0.2s ease; }
+      #form .wrapper_form .closer:hover {
+        fill: #26ad60; }
+    #form .wrapper_form form {
+      margin-top: 30px; }
+    #form .wrapper_form input {
+      diplay: block;
+      width: 100%;
+      margin: 15px 0 15px 0;
+      height: 35px;
+      padding: 5px 10px;
+      font-family: Roboto, sans-serif;
+      border: 2px solid rgba(38, 173, 96, 0.5);
+      transition: border 0.3s ease; }
+      #form .wrapper_form input:focus {
+        border: 2px solid #26ad60;
+        outline: 0; }
+    #form .wrapper_form button {
+      width: 100%;
+      margin: 15px 0 15px 0;
+      height: 35px;
+      padding: 5px 10px;
+      background: rgba(38, 173, 96, 0.8);
+      border: 0;
+      color: #fff;
+      text-transform: uppercase;
+      font-family: Roboto, sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      cursor: pointer;
+      transition: background 0.3s ease; }
+      #form .wrapper_form button:active {
+        background: #26ad60;
+        outline: 0; }
 
 /*# sourceMappingURL=style.css.map */
